@@ -1,6 +1,7 @@
 {
     "name": "phly/phly-contact",
     "description": "ZF2 Module implementing contact form functionality",
+    "license": "BSD-2.0",
     "type": "library",
     "keywords": [
         "zf2",
@@ -17,14 +18,19 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.*"
+        "zendframework/zend-mvc": "^2.6",
+        "zendframework/zend-mail": "^2.5",
+        "zendframework/zend-view": "^2.5",
+        "zendframework/zend-inputfilter": "^2.5",
+        "zendframework/zend-validator": "^2.5",
+        "zendframework/zend-captcha": "^2.5",
+        "zendframework/zend-form": "^2.6",
+        "zendframework/zend-servicemanager": "^2.6",
+        "zendframework/zend-stdlib": "^2.7"
     },
     "autoload": {
-        "psr-0": {
-            "PhlyContact": "src/"
-        },
-        "classmap": [
-            "./"
-        ]
+        "psr-4": {
+            "PhlyContact\\": "src/"
+        }
     }
 }

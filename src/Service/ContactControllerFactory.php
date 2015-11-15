@@ -3,7 +3,6 @@
 namespace PhlyContact\Service;
 
 use PhlyContact\Controller\ContactController;
-use Zend\Mail\Message;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
